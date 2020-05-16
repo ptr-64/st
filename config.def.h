@@ -5,9 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true ";
 static int borderpx = 2;
-
+/* :antialias=true:autohint=true */
 /*
  * What program is execed by st depends of these precedence rules:
  * 1: program passed with -e
@@ -61,7 +61,7 @@ static unsigned int blinktimeout = 800;
 /*
  * thickness of underline and bar cursors
  */
-static unsigned int cursorthickness = 2;
+static unsigned int cursorthickness = 1;
 
 /*
  * bell volume. It must be a value between -100 and 100. Use 0 for disabling
@@ -90,7 +90,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.8;           //< alpha value used when the window is focused.
+float alpha = 0.80;           //< alpha value used when the window is focused.
 float alphaUnfocussed = 0.6; //< alpha value used when the focus is lost
 
 /* Terminal colors (16 first used in escape sequence) */
@@ -141,7 +141,7 @@ static unsigned int defaultrcs = 256;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 6;
 
 /*
  * Default columns and rows numbers
